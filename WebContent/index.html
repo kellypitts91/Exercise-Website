@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 	<!-- 
+     Get Physical Website
+     
+	 Author: Kelly Pitts 09098321
+     Date:   8-08-2016 
+
+      Filename: index.html
+      Supporting files: header-styles.css footer-styles.css index-styles.css
+ 
+   	-->
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home Page</title>
+	<link rel="stylesheet" type="text/css" href="header-styles.css">
+	<link rel="stylesheet" type="text/css" href="footer-styles.css">
+	<link rel="stylesheet" type="text/css" href="index-styles.css">
+	
+	<script>
+		//function to add a class to the top navigation for when the screen reaches a certain size (mobile)
+		function dropDownMenu() {
+		    var x = document.getElementById("myTopnav");
+		    if (x.className === "topnav") {
+		        x.className += " responsive";
+		    } else {
+		        x.className = "topnav";
+		    }
+		}
+	</script>
+</head>
+
+<body>
+	<header>
+		<nav id="top-menu">
+			<img id="image-logo" src="Resources/logo2.JPG" alt="Logo" />
+			<ul class="topnav" id="myTopnav">
+				<li class="active"><a id="selected" href="index.html">Home</a></li>
+				<li><a href="workouts.html">Workouts</a></li>
+				<li><a href="tips.html">Tips</a></li>
+				<li><a href="mealPlans.html">Meal Plans</a></li>
+				<li class="icon">
+					<a href="#" onclick="dropDownMenu()">☰</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div id="content">
+		<p id="homeParagraph">
+			"At Get Physical, we pride ourselves in providing everything you need to help you get fit and healthy.
+			You can find everything you need to help you succeed, weather you are a beginner looking to get started or
+			advanced looking for new ideas and to keep track of your goals. This site is for you!" - Owner
+		</p>
+		<p id="homeParagraphFree">Even better it is <strong><em>absolutely free!</em></strong></p>
+		<img id="imgGoal" src="Resources/goalSetting.JPG" alt="Goal Setting" />
+		
+		<iframe width="420" height="345" src="https://www.youtube.com/embed/GmxinAmcz2w"></iframe>
+	</div>	
+	
+	<footer>
+		<nav id="bottom-menu">
+			<ul>
+				<li><a href="contactUs.html">Contact Us</a></li>
+				<li><a href="references.html">References</a></li>
+				<li id="copyright">copyright 2016 &#169</li>
+			</ul>
+		</nav>	
+	</footer>
+	
+</body>
+</html>

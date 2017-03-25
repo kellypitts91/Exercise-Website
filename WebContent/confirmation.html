@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <!-- 
+     Get Physical Website
+     
+	 Author: Kelly Pitts 09098321
+     Date:   8-09-2016 
+
+      Filename: confirmation.html
+      Supporting files: header-styles.css index-styles.css footer-styles.css confirmation-reference-styles.css
+ 
+   	-->
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Confirmation</title>
+	<link rel="stylesheet" type="text/css" href="header-styles.css">
+	<link rel="stylesheet" type="text/css" href="footer-styles.css">
+	<link rel="stylesheet" type="text/css" href="index-styles.css">
+	<link rel="stylesheet" type="text/css" href="confirmation-reference-styles.css">
+	
+	<script>
+		//function to add a class to the top navigation for when the screen reaches a certain size (mobile)
+		function dropDownMenu() {
+		    var x = document.getElementById("myTopnav");
+		    if (x.className === "topnav") {
+		        x.className += " responsive";
+		    } else {
+		        x.className = "topnav";
+		    }
+		}
+	</script>
+</head>
+
+<body>
+	<header>
+		<nav id="top-menu">
+			<img id="image-logo" src="Resources/logo2.JPG" alt="Logo" />
+			<ul class="topnav" id="myTopnav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="workouts.html">Workouts</a></li>
+				<li><a href="tips.html">Tips</a></li>
+				<li><a href="mealPlans.html">Meal Plans</a></li>
+				<li class="icon">
+					<a href="#" onclick="dropDownMenu()">☰</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div id="content">
+		<h2>Success</h2>
+		<img src="Resources/tick.jpg" alt="tick" />
+		<p>Your message has been sent successfully</p>
+	</div>	
+	
+	<footer>
+		<nav id="bottom-menu">
+			<ul>
+				<li><a href="contactUs.html">Contact Us</a></li>
+				<li><a href="references.html">References</a></li>
+				<li id="copyright">copyright 2016 &#169</li>
+			</ul>
+		</nav>	
+	</footer>
+	
+</body>
+</html>

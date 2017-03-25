@@ -1,0 +1,176 @@
+/*
+   Assignment 1. Get Physical Website
+     
+   Author: Kelly Pitts 09098321
+   Date:   7/09/2016
+
+   Filename: tips-styles.css
+   Supporting Files: tips.html
+
+*/
+
+p {
+	float: left;
+	width: 50%	
+}
+
+/* position/size of images */
+#clock, #workoutBuddy, #exerciseSchedule, #water, #dumbbell, #mumChildWorkout {
+	width: 30%;
+	margin: 0.5em;
+}
+
+/* position of bottom image so doesn't overlap the border */
+#mumChildWorkout {
+	margin-top: -5px;
+}
+
+/* creates 2 columns */
+#wrap {
+	width: 100%;
+}
+
+#leftCol {
+	float: left;
+	width: 50%;
+}
+
+#rightCol {
+	float: right;
+	width: 50%;
+}
+
+/* size of each block */
+.facts {
+	border: 2px solid rgba(20, 20, 250, 0.7); /* transparent blue */
+	margin: 8px 5px 0px;
+	height: 27em;
+}
+
+/* positions images that are next to an ordered list */
+.floatImg ol {
+	width: 45%;
+	float: left;
+}
+
+ol, ul {
+	margin-right: 1.5%;
+}
+
+/* removes margin from paragraph that contains the orange */
+#orangePara {
+  	margin-top: 0;
+  	margin-bottom: 0;
+}
+
+/* positions orange image as it has the least written content */
+#orange {
+	width: 35%;
+	float: right;
+  	margin-top: 1em;
+  	margin-right: 5em;
+}
+
+/* positions external link */
+#readMore {
+	float: right;
+	margin-right: 1.5em;
+}
+
+/* image at bottom of page */
+#activeKids {
+	clear: right;
+	width: 50%;
+	margin-left: 20%;
+}
+
+/* link that takes user to top of page */
+#topOfTips {
+	margin-left: 1.5%;
+	float: left;
+}
+
+/* Responsive styles for desktop window size */
+@media only screen and (max-width: 750px) {
+	.floatImg {
+		height: 25em;
+	}	
+}
+
+@media only screen and (max-width: 700px) {
+	/* controlling height of boxes (so less whitespace) */
+	.facts {
+		height: 29em;
+	}	
+	.firstRow {
+		height: 23em;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.floatImg ol {
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	/* removes 2 columns, makes everything into 1 column */
+	#leftCol {
+		float: none;
+		width: 100%;
+	}
+
+	#rightCol {
+		float: none;
+		width: 100%;
+	}
+  	
+  	.facts:not(.facts8) {
+     	height: 25em; 
+    }
+}
+
+/* responsive styles for mobile */
+@media only screen and (max-width: 360px) {
+	
+	/* Controlling height of each section (less whitespace, less scrolling)*/
+	.facts1, .facts7 {
+		height: 16em !important;
+	}
+	
+	.facts2 {
+		height: 20em !important;
+	}
+	
+	.facts3 {
+		height: 32em !important;
+	}
+	
+	.facts4 {
+		height: 23em !important;
+	}
+	
+	.facts5, .facts8 {
+		height: 25em !important;
+	}
+	
+	.facts6 {
+		height: 30em !important;
+	}
+  	#activeKids {
+     	margin-bottom: 2em; 
+    }
+}
+	
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+	#activeKids {
+     	margin-bottom: 5em; 
+    }
+}
+	
+	
+	
+	
+	
+	
+

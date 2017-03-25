@@ -1,0 +1,62 @@
+/*
+   Assignment 1. Get Physical Website
+     
+   Author: Kelly Pitts 09098321
+   Date:   8/08/2016
+
+   Filename: header-styles.css
+   Supporting Files: 	index.html workouts.html tips.html mealPlans.html 
+   						contactUs.html references.html confirmation.html
+
+*/
+
+#bottom-menu {
+	margin-top: 50px;
+}
+
+#bottom-menu ul {
+	padding: 0;
+	margin: 0;
+	bottom: 0;
+	height: 2.5em;
+	position: fixed;	/* fixes footer to bottom of page */
+	width: 100%;
+	background-color: rgba(0, 110, 255, 0.7); /*Transparent blue*/
+}
+
+#bottom-menu ul li {
+	/* Position/appearance of list items */
+	list-style-type: none;
+	float: left;
+	padding-right: 0.5em;
+	padding-left: 2em;
+	padding-top: 0.5em;
+}
+
+#bottom-menu ul li a {
+	/* Font styles for links in footer */
+	font-size: 0.9em;
+	font-family: verdana;
+	text-decoration: none;
+	color: white;
+}
+
+#bottom-menu ul li a:hover:not(#selected) {
+	color: black;
+}
+
+#copyright {
+	color: white;
+	float: right !important;
+}
+
+/* Responsive styles for mobile */
+@media only screen and (max-width: 360px) {
+	#bottom-menu ul {
+		height: 6em;
+	}
+	
+	#bottom-menu ul li {
+		float: none;
+	}
+}

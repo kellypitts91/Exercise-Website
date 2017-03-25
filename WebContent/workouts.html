@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 	<!-- 
+     Get Physical Website
+     
+	 Author: Kelly Pitts 09098321
+     Date:   10-08-2016 
+
+      Filename: workouts.html
+      Supporting files: header-styles.css index-styles.css footer-styles.css workout-styles.css
+ 
+   	-->
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Workouts</title>
+	<link rel="stylesheet" type="text/css" href="header-styles.css">
+	<link rel="stylesheet" type="text/css" href="footer-styles.css">
+	<link rel="stylesheet" type="text/css" href="index-styles.css">
+	<link rel="stylesheet" type="text/css" href="workout-styles.css">
+	
+	<script>
+		//function to add a class to the top navigation for when the screen reaches a certain size (mobile)
+		function dropDownMenu() {
+		    var x = document.getElementById("myTopnav");
+		    if (x.className === "topnav") {
+		        x.className += " responsive";
+		    } else {
+		        x.className = "topnav";
+		    }
+		}
+	</script>
+</head>
+
+<body>
+	<header>
+		<nav id="top-menu">
+			<img id="image-logo" src="Resources/logo2.JPG" alt="Logo" />
+			<ul class="topnav" id="myTopnav">
+				<li><a href="index.html">Home</a></li>
+				<li class="active"><a id="selected" href="workouts.html">Workouts</a></li>
+				<li><a href="tips.html">Tips</a></li>
+				<li><a href="mealPlans.html">Meal Plans</a></li>
+				<li class="icon">
+					<a href="#" onclick="dropDownMenu()">☰</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div id="content">
+		<div id="leftCol">
+			<h3>Killer Abs Workout Routine</h3>
+			<ul>
+				<li><a href="#">10 V Crunches<br /><div><img src="Workout-images/VCrunch.jpg" /></div></a></li>
+				<li><a href="#">10 Side Crunches, Each Side<br /><div><img src="Workout-images/side-crunch.jpg" /></div></a></li>
+				<li><a href="#">10 Leg Raises<br /><div><img src="Workout-images/leg-raise.jpg" /></div></a></li>
+				<li><a href="#">1 Min Plank<br /><div><img src="Workout-images/plank.jpg" /></div></a></li>
+				<li><a href="#">10 Knee Tuck Crunches<br /><div><img src="Workout-images/knee-tuck.jpg" /></div></a></li>
+				<li><a href="#">10 Abdominal Crunches<br /><div><img src="Workout-images/abdominal-crunch.jpg" /></div></a></li>
+				<li><a href="#">10 Bicycle Crunches<br /><div><img src="Workout-images/bicycle-crunch.jpg" /></div></a></li>
+			</ul>
+			
+			<h3>Sexy Leg Workout Routine</h3>
+			<ul id="leg-workout">
+				<li><a href="#">20 Squats<br /><div><img src="Workout-images/squat.jpg" /></div></a></li>
+				<li><a href="#">30 Lunges<br /><div><img src="Workout-images/lunges.jpg" /></div></a></li>
+				<li><a href="#">40 Calf Raises<br /><div><img src="Workout-images/calf-raise.jpg" /></div></a></li>
+				<li><a href="#">50 Sec Wall Sit<br /><div><img src="Workout-images/wall-sit.jpg" /></div></a></li>
+				<li><a href="#">100 Jumping Jacks<br /><div><img src="Workout-images/jumping-jack.jpg" /></div></a></li>
+				<li><a href="#">50 Sec Wall Sit<br /><div><img src="Workout-images/wall-sit.jpg" /></div></a></li>
+				<li><a href="#">40 Sumo Squats<br /><div><img src="Workout-images/sumo-squat.png" /></div></a></li>
+				<li><a href="#">30 Leg Raises<br /><div><img src="Workout-images/leg-raise.jpg" /></div></a></li>
+				<li><a href="#">20 Squats<br /><div><img src="Workout-images/squat.jpg" /></div></a></li>
+			</ul>	
+		</div>
+		<div id="rightCol">
+			<h3>Tank Top Arm Workout Routine</h3>
+			<ul>
+				<li><a href="#">10 Pushups<br /><div><img src="Workout-images/Push-Ups.jpg" /></div></a></li>
+				<li><a href="#">24 Bicep Curls<br /><div><img src="Workout-images/bicep-curls.jpg" /></div></a></li>
+				<li><a href="#">15 Shoulder Presses<br /><div><img src="Workout-images/shoulder-press.jpg" /></div></a></li>
+				<li><a href="#">10 Pushups<br /><div><img src="Workout-images/Push-Ups.jpg" /></div></a></li>
+				<li><a href="#">15 Tricep Dips<br /><div><img src="Workout-images/tricep-dips.jpg" /></div></a></li>
+				<li><a href="#">15 Back Rows<br /><div><img src="Workout-images/back-row.jpg" /></div></a></li>
+				<li><a href="#">15 Lateral Raises<br /><div><img src="Workout-images/lateral-raise.jpg" /></div></a></li>
+				<li><a href="#">10 pushups<br /><div><img src="Workout-images/Push-Ups.jpg" /></div></a></li>
+				<li><a href="#">15 Tricep Kickbacks with 20 Tricep Pulse Backs<br /><div><img src="Workout-images/PushUpTricep.jpg" /></div></a></li>
+			</ul>
+			
+			<h3>Quad & Glute Burner Workout Routine 3-5 Sets</h3>
+			<ul id="last">
+				<li><a href="#">50 squat pulses<br /><div><img src="Workout-images/squat.jpg" /></div></a></li>
+				<li><a href="#">40 hip raises<br /><div><img src="Workout-images/hip-raise.png" /></div></a></li>
+				<li><a href="#">30 squats<br /><div><img src="Workout-images/squat.jpg" /></div></a></li>
+				<li><a href="#">20 walking lunges<br /><div><img src="Workout-images/lunges.jpg" /></div></a></li>
+				<li><a href="#">10 lunge jumps<br /><div><img src="Workout-images/jumping-lunges.jpg" /></div></a></li>
+			</ul>
+		</div>
+	</div>	
+	
+	<footer>
+		<nav id="bottom-menu">
+			<ul>
+				<li><a href="contactUs.html">Contact Us</a></li>
+				<li><a href="references.html">References</a></li>
+				<li id="copyright">copyright 2016 &#169</li>
+			</ul>
+		</nav>	
+	</footer>
+	
+</body>
+</html>

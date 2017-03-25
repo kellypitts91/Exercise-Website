@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <!-- 
+     Get Physical Website
+     
+	 Author: Kelly Pitts 09098321
+     Date:   10-08-2016 
+
+      Filename: tips.html
+      Supporting files: header-styles.css index-styles.css footer-styles.css tips-styles.css
+ 
+   	-->
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tips</title>
+	<link rel="stylesheet" type="text/css" href="header-styles.css">
+	<link rel="stylesheet" type="text/css" href="footer-styles.css">
+	<link rel="stylesheet" type="text/css" href="index-styles.css">
+	<link rel="stylesheet" type="text/css" href="tips-styles.css">
+	
+	<script>
+		//function to add a class to the top navigation for when the screen reaches a certain size (mobile)
+		function dropDownMenu() {
+		    var x = document.getElementById("myTopnav");
+		    if (x.className === "topnav") {
+		        x.className += " responsive";
+		    } else {
+		        x.className = "topnav";
+		    }
+		}
+	</script>
+</head>
+
+<body>
+	<header>
+		<nav id="top-menu">
+			<img id="image-logo" src="Resources/logo2.JPG" alt="Logo" />
+			<ul class="topnav" id="myTopnav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="workouts.html">Workouts</a></li>
+				<li class="active"><a id="selected" href="tips.html">Tips</a></li>
+				<li><a href="mealPlans.html">Meal Plans</a></li>
+				<li class="icon">
+					<a href="#" onclick="dropDownMenu()">☰</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div id="content">
+		<div id="wrap">
+			<div id="leftCol">
+				<div class="facts facts1 firstRow">
+					<h3>Did you know??</h3>
+					<p>
+						For the first 15 minutes of your workout, your body burns <strong>sugars and carbs</strong>
+						<br />
+						At 30 minutes, your body enters the <strong>fat burning zone</strong>
+					</p>
+					<img id="clock" src="Resources/15MinuteClock.jpg" />
+				</div>
+				<div class="facts facts2">
+					<h3>Why work out before work??</h3>
+					<ol>
+						<li>It is often the most peaceful time of the day and a great way to get some alone time.</li>
+						<li>It preps you for the day, waking up your brain, clears the mind and helps organise your thoughts.</li>
+						<li>Get your exercise first thing and you wont have to worry about it for the rest of the day.</li>
+						<li>It boosts your metabolism and gets your digestion moving for the whole day.</li>
+					</ol>
+				</div>
+				
+				<div class="facts facts3 floatImg">
+					<h3>10 tips to increase workout motivation</h3>
+					<ol>
+						<li>Take before and after pictures</li>
+						<li>Start an exercise contest</li>
+						<li>Think about the benefits</li>
+						<li>Make friends at the gym</li>
+						<li>Load up on a new playlist</li>
+						<li>Reward your efforts</li>
+						<li>Take it outdoors</li>
+						<li>Variety is key</li>
+						<li>Find a buddy</li>
+						<li>Make it fun</li>
+					</ol>
+					<img id="workoutBuddy" src="Resources/workoutBuddy.png" alt="Workout Buddy"/>
+				</div>
+				
+				<div class="facts facts4">
+					<h3>Tips to scheduling your workouts</h3>
+					<ul>
+						<li>Use a planner - Use one that breaks down each day by hours.</li>
+						<li>Select a time - Be specific, example: 5am, 6:30pm.</li>
+						<li>Stick with it! Make your workouts non negotiable!</li>
+						<li>Select a day to schedule your workouts for the week. example: Sundays.</li>
+						<li>REMEMBER to keep your goal in mind! you are worth it!</li>
+					</ul>
+					<img id="exerciseSchedule" src="Resources/exerciseSchedule.jpg" alt="Exercise Schedule" />
+				</div>
+			</div>
+			<div id="rightCol">
+				<div class="facts facts5 firstRow">
+					<h3>Top 5 work out tips</h3>
+					<ol>
+						<li>Wake up early! go straight to the gym!</li>
+						<li>Water Water Water!</li>
+						<li>Stretch before anything!</li>
+						<li>Workout partner</li>
+						<li>Know what your body can and can't do!</li>
+					</ol>
+					<img id="water" src="Resources/water.jpg" alt="Water bottle" />
+				</div>
+				<div class="facts facts6 smallerHeight">
+					<h3>9 everyday ways to sneak in a workout</h3>
+					<ol>
+						<li>Leave a pair of dumbbells at the bottom of the stairs</li>
+						<li>Practice good posture to strengthen your core</li>
+						<li>10 squats everytime you use the bathroom</li>
+						<li>50 crunches and 50 push-ups before every shower</li>
+						<li>Calve raises while you wait in line</li>
+						<li>Park further from your destination</li>
+						<li>Bicep curl with your grocery bags</li>
+						<li>Jumping jacks during TV commercial breaks</li>
+						<li>Walk while you talk</li>
+					</ol>
+					<img id="dumbbell" src="Resources/clipart-dumbbells.GIF" alt="Dumbbell"/>
+				</div>
+				<div class="facts facts7">
+					<h3>Avoid Dehdration</h3>
+					<p id="orangePara">Eat an orange before a workout, you will experience less soreness and they help you stay hydrated.</p>
+					<img id="orange" src="Resources/orange.png" alt="Orange" />
+				</div>
+				<div class="facts facts8">
+					<h3>Workout Tips for stay-at-home parents</h3>
+					<ul>
+						<li>Exercise <em>with</em> your kids</li>
+						<li>Invest in a jogging stroller or a “kid trailer” for your bike.</li>
+						<li>Strap baby to you in a baby carrier.</li>
+						<li>Join a gym with child-care.</li>
+						<li>Sign up for parent-baby yoga classes.</li>
+						<li>Purchase some exercise videos.</li>
+						<li>Improvise</li>
+						<li>Most importantly, put exercise on your “to-do” list.</li>
+					</ul>
+					<img id="mumChildWorkout" src="Resources/mumChildWorkout.jpg" alt="Mum and child workout" />
+					<a id="readMore" href="http://www.sparkpeople.com/resource/fitness_articles.asp?id=483" target="_blank">Read more.</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a id="topOfTips" href="#">Return to top</a>	
+	<img id="activeKids" src="Resources/activeKids.png"/>
+	<footer>
+		<nav id="bottom-menu">
+			<ul>
+				<li><a href="contactUs.html">Contact Us</a></li>
+				<li><a href="references.html">References</a></li>
+				<li id="copyright">copyright 2016 &#169</li>
+			</ul>
+		</nav>	
+	</footer>
+	
+</body>
+</html>

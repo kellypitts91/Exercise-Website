@@ -1,0 +1,129 @@
+/*
+   Assignment 1. Get Physical Website
+     
+   Author: Kelly Pitts 09098321
+   Date:   8/08/2016
+
+   Filename: header-styles.css
+   Supporting Files: 	index.html workouts.html tips.html mealPlans.html 
+   						contactUs.html references.html confirmation.html
+
+*/
+/* position of logo */
+#image-logo {
+	height: 8em;
+	float: left;
+	border-bottom: 2px solid rgb(0, 110, 255); /* dark blue */
+	border-right: 2px solid rgb(0, 110, 255); /* dark blue */
+}
+
+/* top navigation styles */
+#top-menu {
+	background-color: rgba(0, 110, 255, 0.7); /* Transparent blue */
+	width: 100%;
+}
+
+#top-menu ul {
+	overflow: hidden;
+	height: 8em;
+	padding: 0;
+	margin: 0;
+	border-bottom: 2px solid rgb(0, 110, 255); /* dark blue */
+}
+
+/* Position/appearance of list items */
+#top-menu ul li {
+	list-style-type: none;
+	float: left;
+	height: 8em;
+	padding: 0.7em;
+	padding-top: 5em;
+}
+
+#top-menu ul li.icon {
+	display: none; /* Hides hamburger menu when not viewing on mobile */
+}
+
+#top-menu ul li a {
+	/* Font styles */
+	font-size: 1.3em;
+	font-family: verdana;
+	color: white;
+	text-decoration: none; /* removes underline */
+	transition: 0.3s; /* smooth transition when change text color (on hover) */
+}
+
+/* changes style of the navigation heading to make it stand out */
+#top-menu ul li.active {
+	font-style: italic;
+	color: white;
+	font-weight: 900;
+	text-decoration: underline;
+	background-color: blue;
+}
+
+#top-menu ul li a:hover:not(#selected) {
+	color: black;
+}
+
+/* Responsive styles for desktop window size */
+@media only screen and (max-width: 600px) {
+	#image-logo {
+		float: none;
+	}
+	
+	#top-menu ul li:not(:first-child) {
+		display: none;	/* Hides nav menu except first child ("Home") */
+	}
+	
+	#top-menu ul li {
+		padding-right: 0.5em;
+	}
+	
+	#top-menu ul li.active {
+   		background-color: inherit;
+   	}
+	
+	/* positions hamburger icon */
+  	#top-menu ul li.icon {
+	    float: right;
+	    display: inline-block;
+  	}
+  	
+  	/* changing layout of the navigation menu to suit mobile */
+  	#top-menu ul.responsive {
+  		padding-left: 1em;
+  		position: relative;
+  	}
+  	
+  	#top-menu ul.responsive li.icon {
+	  	position: absolute;
+	    right: 0;
+	    top: 0;
+	    margin-top: -4em;
+  	}
+  	
+   	#top-menu ul.responsive li {
+   		float: none;
+   		display: inline;
+   	}
+   	
+   	#top-menu ul.responsive li a {
+   		display: block;
+   		text-align: left;
+   	}
+   	
+   	#top-menu ul {
+   		margin-top: -4em;
+   	}
+   	
+   	#top-menu ul.responsive {
+   		height: 100%;
+   		margin: 0;
+   	}
+}
+
+
+
+
+

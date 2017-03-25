@@ -1,0 +1,33 @@
+/*
+   Assignment 1. Get Physical Website
+     
+   Author: Kelly Pitts 09098321
+   Date:   8/09/2016
+
+   Filename: confirmation-reference-styles.css
+   Supporting Files: confirmation.html reference.html
+
+*/
+
+
+/* Confirmation styles */
+
+h2 {
+	float: left;
+	margin: 20px 5%; /* 20px top/bottom, 5% right/left */
+}
+
+/* size and position of green tick img */
+#content img {
+	width: 10%;
+	margin-top: 10px;
+}
+
+p {
+ 	clear: left; 
+}
+
+/* Reference styles */
+#references {
+ 	padding-bottom: 5.5em; 
+}

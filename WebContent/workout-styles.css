@@ -1,0 +1,89 @@
+/*
+   Assignment 1. Get Physical Website
+     
+   Author: Kelly Pitts 09098321
+   Date:   7/09/2016
+
+   Filename: workout-styles.css
+   Supporting Files: workouts.html
+
+*/
+
+#content {
+	width: 100%;
+}
+
+/* size of all images within the body */
+#content img {
+	width: 35%;
+}
+
+/* hides images */
+a>div { 
+	display: none; 
+}
+
+/* when hover over a link, shows the image */
+a:hover>div { 
+	display: block; 
+}
+
+#content ul {
+ 	border: 2px solid rgba(20, 20, 250, 0.7); /* transparent blue */
+  	margin: 0 2%;
+}
+
+/* list styles */
+#content ul li {
+  	list-style-type: none;
+  	margin-top: 5px;
+  	margin-bottom: 5px;
+}
+
+#content ul li a {
+  	text-decoration: none;
+  	color: black;
+}
+
+#leg-workout {
+ 	margin-bottom: 5em !important; 
+}
+
+/* creating 2 columns */
+#leftCol {
+	float: left;
+	width: 50%;
+}
+
+#rightCol {
+	float: right;
+	width: 50%;
+}
+
+/* responsive styles for mobile */
+@media only screen and (max-width: 550px) {
+  	#leg-workout {
+ 		margin-bottom: 0 !important; 
+    }
+  	/* removing the 2 columns, making into 1 column */
+  	#leftCol {
+		float: none;
+		width: 100%;
+	}
+
+	#rightCol {
+		float: none;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	#last {
+		margin-bottom: 7em !important;
+	}
+}
+
+
+
+
+

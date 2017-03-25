@@ -1,0 +1,185 @@
+/*
+   Assignment 1. Get Physical Website
+     
+   Author: Kelly Pitts 09098321
+   Date:   27/08/2016
+
+   Filename: mealPlan-styles.css
+   Supporting Files: mealPlan.html
+
+*/
+
+/* Styles for the 2 tables */
+table {
+	border: 2px solid;
+	Border-collapse: collapse; /* removes space between borders */
+	clear: left;
+	margin: 1%;
+	width: 98%;
+}
+
+/* position of caption/headings of tables */
+caption {
+	font-size: 2em;
+	text-align: center;
+	margin: 1.5% 2em;
+}
+
+/* styles for table cells */
+tr th, tr td {
+	border: 1px solid;
+	text-align: left;
+	padding: 1%;
+  	width: 22%;
+}
+
+/* heading styles for tables */
+thead th, thead td {
+	background-color: rgba(152, 222, 245, 0.4); /* 40% opacity blue */
+	text-align: center;
+	font-weight: 900 !important;
+}
+
+/* Styles for top table */
+#mealPlanTable1 caption {
+	margin-top: 0;
+}
+
+/* centers text of first column */
+#mealPlanTable1 tr th:first-child {
+	text-align: center;
+}
+
+#mealPlanTable1 tr th, #mealPlanTable1 tr td {
+	width: 1%;
+}
+
+/* controlling width for first table, so all columns same width */
+#mealPlanTable1 tr th:not(:first-child), #mealPlanTable1 tr td {
+	width: 13%;
+	font-weight: 500;
+}
+
+/* rotating text of first column of first table, so text is vertical */
+#mealPlanTable1 .rotateText{
+	-webkit-transform: rotate(-90deg); 
+	-moz-transform: rotate(-90deg);
+}
+
+/* Styles for bottom table */
+#mealPlanTable2 tr th, #mealPlanTable2 tr td {
+	text-align: center;
+}
+
+#mealPlanTable2 tr td {
+	width: 85%;
+}
+
+/*styles for buttons and pop up lists at bottom of page*/
+
+#buttonGroup {
+	text-align: center;
+	background-color: rgba(0, 110, 255, 0.7); /* Transparent blue */
+	width: 100%;
+	padding-bottom: 30px;
+	margin-bottom: 50px;
+}
+
+#buttonGroup ul li {
+	float: left;
+	margin-right: 4%;
+	list-style-type: none;
+	padding-top: 6px;
+}
+
+#buttonGroup ul li a {
+	text-decoration: none;
+	color: white;
+}
+
+#buttonGroup ul li a:hover {
+	color: black;
+}
+
+h3, h4, #topOfMealPlans {
+	margin-left: 1.5%;
+}
+
+p {
+	width: 95%;
+}
+
+/* Responsive styles for mobile */
+@media only screen and (max-width: 360px) {
+	/* adds space to bottom so footer does not cover the buttons*/
+	#buttonGroup {
+		padding-bottom: 40px;
+		margin-bottom: 110px;
+	}
+	
+	/* positions lists that pop up when buttons clicked */
+	#quantityList ul:not(#innerList) {
+		margin-bottom: 100px;
+	}
+	
+	#quantityList h3 {
+		margin-top: -100px;
+	}
+	
+	#quantityList p {
+		margin-bottom: 100px;
+	}
+	
+	#topOfMealPlans {
+		float: left;
+		margin-bottom: 7em;
+	}
+  
+  	#mealPlanTable1 tr th:first-child {
+     	font-size: 0.8em; 
+      	text-align: center;
+    }
+  	
+  	#mealPlanTable1 tr th:not(:first-child) {
+     	font-size: 0.8em; 
+    }
+  	
+  	#buttonGroup {
+     	padding-bottom: 5px; 
+    }
+  	#buttonGroup ul li {
+     	float: none; 
+    }
+    
+  	table  {
+      	margin: 0;
+      	width: 100%;
+    }
+}
+/* responsive styles for mobile */
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+  	table  {
+      	margin: 0;
+      	width: 100%;
+    }
+  	
+	#mealPlanTable1 tr th, #mealPlanTable1 tr td {
+        width: 0;
+	}
+	
+  	caption {
+     	font-size: 1.5em;
+      	margin: 0;
+    }
+  
+  	#mealPlanTable1 tr th:first-child {
+     	font-size: 0.8em; 
+    }
+  	
+  	#mealPlanTable1 tr th:not(:first-child) {
+     	font-size: 0.5em; 
+    }
+}
+	
+	
+	

@@ -1,0 +1,178 @@
+/*
+   Assignment 1. Get Physical Website
+     
+   Author: Kelly Pitts 09098321
+   Date:   8/09/2016
+
+   Filename: contact-styles.css
+   Supporting Files: contactUs.html
+
+*/
+/* link styles within the body of the page */
+#content a {
+	margin-left: 1.5%;
+	color: black;
+	text-decoration: none;
+}
+
+#content p {
+	float: left;
+}
+
+fieldset {
+   background-color: rgb(230, 230, 255); /* light blue */
+   border: 1px solid rgb(0, 110, 255); /* dark blue */
+   float: left;
+   margin-top: 10px;
+   margin-left: 2%;
+   width: 45%;
+}
+
+legend {
+   background-color: rgb(0, 110, 255); /* dark blue */
+   color: white;
+   padding: 3px 0px;
+   text-indent: 5px;
+   width: 100%;
+}
+
+/* Label styles */
+
+label {
+   clear: left;
+   display: block;
+   float: left;
+   font-size: 0.9em;
+   margin: 7px 4% 7px 5px;
+   width: 20%;
+}
+
+/* Input control styles */
+
+input, button {
+   display: block;
+   float: left;
+   font-size: 0.9em;
+   margin: 7px 0px;
+   width: 70%;
+}
+
+input#state {
+   width: 50px;
+}
+
+/* Selection list styles */
+
+select {
+   display: block;
+   float: left;
+   font-size: 0.9em;
+   margin: 7px 0px;
+   width: 10em;
+}
+
+/* Option button styles */
+
+fieldset.optionGroup {
+   border-width: 0px;
+}
+
+fieldset.optionGroup label {
+   display: inline;
+   float: none;
+   margin: 0px 3px 0px 0px;
+   width: 30px;
+}
+
+fieldset.optionGroup input {
+   display: inline;
+   float: none;
+   margin: 0px 20px 0px 0px;
+   width: 20px;
+}
+
+/* Text area styles */
+
+textarea {
+   display: block;
+   font-size: 0.9em;
+   float: left;
+   height: 140px;
+   margin: 10px 0px;
+   width: 70%;
+}
+
+/* button position */
+.buttons {
+	margin-left: 10%;
+	list-style-type: none;
+}
+
+.buttons li {
+	float: left;
+	margin: 5px;
+	margin-bottom: 60px;
+	padding: 5px;
+	width: 4em;
+	text-align: center;
+	background-color: rgb(0, 110, 255); /* dark blue */
+	border-radius: 20px;
+}
+
+.buttons li a {
+	text-decoration: none;
+	color: white !important;
+}
+
+/* changes colour of input areas when on focus */
+input:focus, select:focus, textarea:focus {
+   background-color: rgb(220, 255, 220); /* light blue */
+}
+
+input:focus:valid {
+   background: rgb(220, 255, 220) url(Resources/go.png) bottom right no-repeat; /* light blue */
+
+   -o-background-size: contain;
+   -moz-background-size: contain;
+   -webkit-background-size: contain;
+   background-size: contain;
+}
+
+input:focus:invalid {
+   background: rgb(255, 232, 233) url(Resources/stop.png) bottom right no-repeat; /* light pink */
+
+   -o-background-size: contain;
+   -moz-background-size: contain;
+   -webkit-background-size: contain;
+   background-size: contain;
+}
+
+/* Responsive styles for desktop window size */
+@media only screen and (max-width: 800px) {
+	/* removes float from fieldset so form is vertical */
+	fieldset {
+		float: none;
+		width: 85%;
+	}
+	
+}
+/* styles for mobile */
+@media only screen and (max-width: 360px) {
+	.buttons li {
+		margin-bottom: 7em;
+	}
+	
+	label {
+		width: 40%;
+	}
+	
+	input, button {
+		width: 50%;
+	}
+	
+	textarea {
+		width: 97%;
+	}
+}
+
+

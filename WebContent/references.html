@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <!-- 
+     Get Physical Website
+     
+	 Author: Kelly Pitts 09098321
+     Date:   14-09-2016 
+
+      Filename: references.html
+      Supporting files: header-styles.css index-styles.css footer-styles.css confirmation-reference-styles.css
+ 
+   	-->
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>References</title>
+	<link rel="stylesheet" type="text/css" href="header-styles.css">
+	<link rel="stylesheet" type="text/css" href="footer-styles.css">
+	<link rel="stylesheet" type="text/css" href="index-styles.css">
+	<link rel="stylesheet" type="text/css" href="confirmation-reference-styles.css">
+	
+	<script>
+		//function to add a class to the top navigation for when the screen reaches a certain size (mobile)
+		function dropDownMenu() {
+		    var x = document.getElementById("myTopnav");
+		    if (x.className === "topnav") {
+		        x.className += " responsive";
+		    } else {
+		        x.className = "topnav";
+		    }
+		}
+	</script>
+</head>
+
+<body>
+	<header>
+		<nav id="top-menu">
+			<img id="image-logo" src="Resources/logo2.JPG" alt="Logo" />
+			<ul class="topnav" id="myTopnav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="workouts.html">Workouts</a></li>
+				<li><a href="tips.html">Tips</a></li>
+				<li><a href="mealPlans.html">Meal Plans</a></li>
+				<li class="icon">
+					<a href="#" onclick="dropDownMenu()">☰</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div id="content">
+	
+		<p>
+			The majority of the infomation found on this site was obtained by google search/images.
+			<br />Here is a list of references.
+		</p>
+		
+		<ul id="references">
+			<li>Google search "workout tips"</li>
+			<li>Workouts page
+				<ul>
+					<li>"Killer abs workout" - napterafitness.wordpress.com</li>
+					<li>"Sexy leg workout" - pinterest.com</li>
+					<li>"Tank top arms" - www.popsugar.com</li>
+				</ul>
+			</li>
+			<li>Tips page
+				<ul>
+					<li>"Did you know" - google+</li>
+					<li>"Why workout before work" - pinterest.com</li>
+					<li>"10 tips to increase workout motivation" - tone-and-tighten.com</li>
+					<li>"Tips to scheduling your workouts" - theaquapastor.wordpress.com</li>
+					<li>"Top 5 workout tips" - sarascoop.com</li>
+					<li>"9 everyday ways to sneak in a workout" - erinfitzgeralfitness.com</li>
+					<li>"Orange quote" - pinterest.com</li>
+					<li>
+						"Workout Tips for Stay-at-Home Parents" - 
+						<a href="http://www.sparkpeople.com/resource/fitness_articles.asp?id=483">www.sparkpeople.com</a>
+					</li>
+				</ul>
+			</li>
+			<li>Meal Plans page
+				<ul>
+					<li>Powerfit meal plan booklet</li>
+				</ul>
+			</li>
+			<li>Competitor references
+				<ul>
+					<li><a href="https://www.fitnessblender.com/" target="_blank" >fitness blender</a></li>
+					<li><a href="http://darebee.com/" target="_blank" >Darebee</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>	
+	
+	<footer>
+		<nav id="bottom-menu">
+			<ul>
+				<li><a href="contactUs.html">Contact Us</a></li>
+				<li><a id="selected" href="#references.html">References</a></li>
+				<li id="copyright">copyright 2016 &#169</li>
+			</ul>
+		</nav>	
+	</footer>
+	
+</body>
+</html>

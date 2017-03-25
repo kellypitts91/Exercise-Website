@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <!-- 
+     Get Physical Website
+     
+	 Author: Kelly Pitts 09098321
+     Date:   10-08-2016 
+
+      Filename: mealPlans.html
+      Supporting files: header-styles.css index-styles.css footer-styles.css mealPlan-styles.css
+ 
+   	-->
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Meal Plans</title>
+	<link rel="stylesheet" type="text/css" href="header-styles.css">
+	<link rel="stylesheet" type="text/css" href="footer-styles.css">
+	<link rel="stylesheet" type="text/css" href="index-styles.css">
+	<link rel="stylesheet" type="text/css" href="mealPlan-styles.css">
+	
+	<script>
+		//function to add a class to the top navigation for when the screen reaches a certain size (mobile)
+		function dropDownMenu() {
+		    var x = document.getElementById("myTopnav");
+		    if (x.className === "topnav") {
+		        x.className += " responsive";
+		    } else {
+		        x.className = "topnav";
+		    }
+		}
+	</script>
+</head>
+
+<body>
+	<header>
+		<nav id="top-menu">
+			<img id="image-logo" src="Resources/logo2.JPG" alt="Logo" />
+			<ul class="topnav" id="myTopnav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="workouts.html">Workouts</a></li>
+				<li><a id="selected" href="tips.html">Tips</a></li>
+				<li class="active"><a href="mealPlans.html">Meal Plans</a></li>
+				<li class="icon">
+					<a href="#" onclick="dropDownMenu()">☰</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div id="content">
+		<table id="mealPlanTable1">
+			<caption>
+				Meal plan based on a 1200Kcal diet
+			</caption>
+			<thead>
+				<tr>
+					<th></th>
+					<th>Day 1</th>
+					<th>Day 2</th>
+					<th>Day 3</th>
+					<th>Day 4</th>
+					<th>Day 5</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th class="rotateText">Breakfast</th>
+					<th>
+						2 Prickly pears with 1.7 Oz (50g) of panela cheese
+						<br />1 cup of watermelon or pineapple
+					</th>
+					<th>
+						2 quesadillas in corn tortilla with 2 ham slices or turkey breast
+						<br />&frac14 of an avocado
+						<br />1 cup of papaya or melon
+					</th>
+					<th>
+						1 cup of papaya or melon
+						<br />1 low fat and sugarless yogurt
+						<br />2 teaspoons of amaranth
+						<br />1 teaspoon of honey
+					</th>
+					<th>
+						2 scrambled eggs with &frac12 cup of green beens
+					</th>
+					<th>
+						&frac12 cup of grapefruit
+						<br />&frac12 cup of cottage cheese
+						<br />1 slice of toasted wholemeal bread
+					</th>
+				</tr>
+				
+				<tr>
+					<th class="rotateText">Snack</th>
+					<th>
+						1 natural and light yoghurt
+					</th>
+					<th>
+						1 amaranth bar
+					</th>
+					<th>
+						Prickly pears salad and 1 baked corn toast
+					</th>
+					<th>
+						20 grapes, strawberries or cherries
+					</th>
+					<th>
+						2 slices of turkey breast
+						<br />2 slices of avocado
+					</th>
+				</tr>
+				
+				<tr>
+					<th class="rotateText">Lunch</th>
+					<th>
+						Vegetable soup
+						<br />7 oz (200g) of grilled fish with tomato slices
+						<br />1 cup of steamed squash
+						<br />Sugar free gelatin
+					</th>
+					<th>
+						Chicken clear soup with vegetables and chickpea
+						<br />7 oz (200g) of lean beef cooked or roasted
+						<br />1 cup of steamed cauliflower with fine herbs
+					</th>
+					<th>
+						1 cup of bean soup
+						<br />8.7 oz (250g) of roasted chicken breast
+						<br />Green salad with 1 teaspoon of olive oil, lemon and vinegar
+						<br />1 teaspoon of sunflower seeds and 5 slices of dehydrated banana
+					</th>
+					<th>
+						1 cup of tortilla soup (not fried)
+						<br />7 oz (200g) of grilled fish
+						<br />Caprese salad with 3 tomato slices and 3 slices of white cheese
+					</th>
+					<th>
+						&frac12 cup of cooked pasta with fresh red sauce
+						<br />8.7 oz (250g) of roasted beef
+						<br />1 cup of steamed broccoli with fine herbs
+						<br />light gelatin or light popsicle
+					</th>
+				</tr>
+				
+				<tr>
+					<th class="rotateText">Snack</th>
+					<th>
+						Potato or celery with lemon and chilli
+					</th>
+					<th>
+						Gelatin or sugar free ice cream
+					</th>
+					<th>
+						10 pistachios
+					</th>
+					<th>
+						Potato or celery with lemon and chilli
+					</th>
+					<th>
+						1 cup of light popcorn
+					</th>
+				</tr>
+				
+				<tr>
+					<th class="rotateText">Dinner</th>
+					<th>
+						1 tuna in water can with &frac14 avocado and vegetables
+						<br />1 prickle pear toast
+					</th>
+					<th>
+						3.5 oz (100g) of salmon
+						<br />5 asparagus
+					</th>
+					<th>
+						1 artichoke
+						1 teaspoon of olive oil, lemon and vinegar
+						1.7 oz (50g) of fresh tuna or trout
+					</th>
+					<th>
+						&frac12 cup of oats
+						&frac12 cup of low fat milk
+						&frac12 cup of dehydrated blackberry or blueberry
+					</th>
+					<th>
+						1.7 oz (50g) of peneia cheese with 1 tomato, &frac12 cup of mushrooms, 
+						coriander and onion
+					</th>
+				</tr>
+			</tbody>
+		</table>
+		
+		<table id="mealPlanTable2">
+			<caption>
+				Alternativly
+			</caption>
+			
+			<thead>
+				<tr>
+					<th></th>
+					<td>Monday - Sunday</td>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<th>
+						Breakfast
+					</th>
+					<td>
+						2 portions of protien 
+						+ 1 portion of cereal 
+						+ 2 portions of vegetables 
+						+ 1 portion of fruit
+					</td>
+				</tr>
+				
+				<tr>
+					<th>
+						Snack
+					</th>
+					<td>
+						1 portion of vegetables 
+						+ 1 portion of cereal
+					</td>
+				</tr>
+				
+				<tr>
+					<th>
+						Lunch
+					</th>
+					<td>
+						2 portions of protein
+						+ 1 portion of lipids
+						+ 1 portion of cereal
+						+ 2 portions of vegetables
+					</td>
+				</tr>
+				
+				<tr>
+					<th>
+						Snack
+					</th>
+					<td>
+						1 portion of vegetables
+						+ 1 portion of lipids
+					</td>
+				</tr>
+				
+				<tr>
+					<th>
+						Dinner
+					</th>
+					<td>
+						2 portions of protein
+						+ 2 portions of vegetables
+						+ 1 portion of lipids
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<h3>Portion size. click one of the links below to get possible options to choose from</h3>
+		 <div id="buttonGroup">
+		 	<ul>
+				<li onclick="protienClick()"><a href="#quantityList">Protien</a></li>
+				<li onclick="lipidsClick()"><a href="#quantityList">Lipids</a></li>
+				<li onclick="vegetablesClick()"><a href="#quantityList">Vegetables</a></li>
+				<li onclick="fruitClick()"><a href="#quantityList">Fruit</a></li>
+				<li onclick="cerealClick()"><a href="#quantityList">Cereal</a></li>
+				<li onclick="hide()"><a href="#quantityList">Hide</a></li>
+			</ul>
+		 </div>
+		 
+		 <div id="quantityList">
+		 </div>
+		 <a id="topOfMealPlans" href="#">Return to top</a>
+		 
+	</div>	
+	
+	<script>
+		function protienClick() {
+			document.getElementById("quantityList").innerHTML = '<h3>1 portion of Protien is equivalent to:</h3>' +
+																'<ul><li>2.8 oz (80g) of beef</li>' +
+																'<li>3.5 oz (100g) of chicken</li>' +
+																'<li>1.7 oz (50g) of turkey breast</li>' +
+																'<li>3.5 oz (100g) of fish</li>' +
+																'<li>3.5 oz (100g) of canned tuna</li>' +
+																'<li>3.5 oz (100g) of crab</li>' +
+																'<li>5 big shrimps or 1 cup of shrimp cocktail</li>' +
+																'<li>12 oysters (mussels, clams)</li>' +
+																'<li>1 whole egg</li>' +
+																'<li>2 egg whites</li>' +
+																'<li>5.2 oz (150g) of cheese (cottage or low fat panela)</li>' +
+																'<li>1.7 oz (50g) of goat cheese</li>' +
+																'<li>1 cup of almond milk</li>' +
+																'<li>1 cup of soy milk</li>' +
+																'<li>&frac12 cup of chickpea, bean or lentil</li></ul>';
+		}
+		
+		function lipidsClick() {
+			document.getElementById("quantityList").innerHTML = '<h3>1 portion of Lipids is equivalent to:</h3>' +
+																'<ul><li>&frac14 of an avocado</li>' +
+																'<li>1 teaspoon of olive, almond, sesame, soy or canola oil</li>' +
+																'<li>&frac12 teaspoon of light mayonnaise</li>' +
+																'<li>1 spoon of low fat salad dressing</li>' +
+																'<li>10 natural peanuts</li>' +
+																'<li>7 natural almonds</li>' +
+																'<li>5 natural Indian walnuts or macadamias</li>' +
+																'<li>6 natural walnuts</li>' +
+																'<li>10 pistachios</li>' +
+																'<li>2 spoons of sunflower seeds</li>' +
+																'<li>6 green olives</li>' +
+																'<li>5 black olives</li>' +
+																'<li>1.4 oz (40g) of bitter chocolate (>50% cacao)</li></ul>';
+		}
+		
+		function vegetablesClick() {
+			document.getElementById("quantityList").innerHTML = '<h3>1 portion of Vegetables is equivalent to:</h3>' +
+																'<h4>1 cup of:</h4>' +
+																'<p>Artichoke, beetroot, celery, water-cress, broccoli, onion, cabbage, cauliflower,' + 
+																'mushroom, chilli, squash, pea, green bean, asparagus, spinach, squash, corn,' +
+																'tomato, lettuce, prickle pear, cucumber, pepper, radish, green tomato, carrot.' +
+																'<br /><br />' +
+																'They can be cooked or raw</p>';
+			
+				
+		}
+		
+		function fruitClick() {
+			document.getElementById("quantityList").innerHTML = '<h3>1 portion of Fruit is equivalent to:</h3>' +
+																'<ul><li>1 medium apple</li>' +
+																'<li>1 peach</li>' +
+																'<li>1 peer</li>' +
+																'<li>1 orange</li>' +
+																'<li>&frac12 grapefruit</li>' +
+																'<li>1 guava</li>' +
+																'<li>1 kiwi fruit</li>' +
+																'<li>2 plums</li>' +
+																'<li>4 lychees</li>' +
+																'<li>1 cup of' +
+																'<ul id="innerList"><li>pineapple</li>' +
+																'<li>papaya</li>' +
+																'<li>watermelon</li>' +
+																'<li>blackberries</li>' +
+																'<li>cherries</li>' +
+																'<li>strawberries</li>' +
+																'<li>grapes</li></ul></li>' +
+																'<li>&frac12 cup of fruit ice cream</li>';
+		}
+		
+		function cerealClick() {
+			document.getElementById("quantityList").innerHTML = '<h3>1 portion of Cereal is equivalent to:</h3>' +
+																'<ul><li>&frac12 cup of rice</li>' +
+																'<li>&frac12 cup of cooked pasta</li>' +
+																'<li>&frac12 cup of dates</li>' +
+																'<li>1 cup of bran</li>' +
+																'<li>&frac12 cup of multigrain cereal</li>' +
+																'<li>&frac12 piece of corn</li>' +
+																'<li>1 medium potato</li>' +
+																'<li>&frac12 cup of spaghetti</li>' +
+																'<li>2 cups of naturall popcorn</li>' +
+																'<li>1 corn tortilla</li>' +
+																'<li>2 prickle pear tortillas</li>' +
+																'<li>1 package of cookies</li>' +
+																'<li>1 hot cake medium size</li>' +
+																'<li>2 slices of wholemeal or rye bread</li></ul>';	
+		}
+		
+		function hide() {
+			document.getElementById("quantityList").innerHTML = "";
+		}
+	</script>
+	
+	<footer>
+		<nav id="bottom-menu">
+			<ul>
+				<li><a href="contactUs.html">Contact Us</a></li>
+				<li><a href="references.html">References</a></li>
+				<li id="copyright">copyright 2016 &#169</li>
+			</ul>
+		</nav>	
+	</footer>
+	
+</body>
+</html>

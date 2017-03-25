@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <!-- 
+     Get Physical Website
+     
+	 Author: Kelly Pitts 09098321
+     Date:   8-09-2016 
+
+      Filename: contactUs.html
+      Supporting files: header-styles.css index-styles.css footer-styles.css contact-styles.css
+ 
+   	-->
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="header-styles.css">
+	<link rel="stylesheet" type="text/css" href="footer-styles.css">
+	<link rel="stylesheet" type="text/css" href="index-styles.css">
+	<link rel="stylesheet" type="text/css" href="contact-styles.css">
+	
+	<script>
+		//function to add a class to the top navigation for when the screen reaches a certain size (mobile)
+		function dropDownMenu() {
+		    var x = document.getElementById("myTopnav");
+		    if (x.className === "topnav") {
+		        x.className += " responsive";
+		    } else {
+		        x.className = "topnav";
+		    }
+		}
+	</script>
+</head>
+
+<body>
+	<header>
+		<nav id="top-menu">
+			<img id="image-logo" src="Resources/logo2.JPG" alt="Logo" />
+			<ul class="topnav" id="myTopnav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="workouts.html">Workouts</a></li>
+				<li><a href="tips.html">Tips</a></li>
+				<li><a href="mealPlans.html">Meal Plans</a></li>
+				<li class="icon">
+					<a href="#" onclick="dropDownMenu()">☰</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div id="content">
+	
+		<a href="mailto:getphysical@gmail.com">Email: getphysical@gmail.com</a>
+		<p>Phone: 0800 Physical</p>
+		
+		<form id="cOrder" name="cOrder" method="post">
+				<fieldset id="contactInfo">
+				<legend>Contact Information</legend>
+
+				<label for="fName">First Name *</label>
+				<input name="fName" id="fName"
+					   placeholder="first name"
+					   required="required" />
+					   
+				<label for="lName">Last Name *</label>
+				<input name="lName" id="lName"
+					   placeholder="last name"
+					   required="required" />
+					   
+				<label>Prefered Contact</label>
+				<fieldset class="optionGroup">
+					<label for= "mCardYes">Phone</label>
+					<input type="radio" name="contactType" id="mPhone"
+						value="phone" />
+
+					<label for= "mCardNo">Email</label>
+					<input type="radio" name="contactType" id="mEmail"
+						value="email" />
+				</fieldset>
+				
+				<label for="phone">Phone</label>
+				<input name="phone" id="phone" type="tel"
+						placeholder="(nnn) nnn-nnnn"
+						pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+						
+				<label for="email">Email</label>
+				<input name="email" id="email" type="email"
+					placeholder="email@email.com" />
+					
+			</fieldset>
+			<fieldset>
+				<legend>Enquiries</legend>
+				<label for="en">Enquiry</label>
+				<select name="en" id="en">
+					<option value="workoutPlan">Workout Plan</option>
+					<option value="mealPlan">Meal Plan</option>
+					<option value="general">General Enquiry</option>
+					<option value="feedback">FeedBack</option>
+				</select>
+				
+				<label id="commentslbl" for="requests">Comments</label>
+				<textarea name="comments" id="comments"></textarea>
+			</fieldset>
+		</form>
+		
+		<ul class="buttons">
+			<li><a href="confirmation.html">Submit</a></li>
+			<li><a href="#">Cancel</a></li>
+		</ul>
+	</div>	
+	
+	<footer>
+		<nav id="bottom-menu">
+			<ul>
+				<li><a id="selected" href="#Contact-Us">Contact Us</a></li>
+				<li><a href="references.html">References</a></li>
+				<li id="copyright">copyright 2016 &#169</li>
+			</ul>
+		</nav>	
+	</footer>
+	
+</body>
+</html>
